@@ -1,0 +1,75 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.piano {
+  display: flex;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.white.active {
+  background-color: #CCC;
+}
+
+.black {
+  --width: 60px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #333;
+}
+
+.playButton {
+  
+}
+
+.stopButton {
+  
+}
+
+.padActivator
+{
+
+}
+
+.dot{
+  height: 20px;
+ width: 20px;
+ border-radius: 50%;
+ display: inline-block;
+ margin-right: 55px;
+ margin-left: 55px;
+}
+
+.dotBorder
+{
+  height: calc(var(--width) * 1.5);
+  width: var(--width);
+}
+
+.inactive{
+background-color: #ff4800;  
+}
+
+.active{
+ background-color: #66d466; 
+}

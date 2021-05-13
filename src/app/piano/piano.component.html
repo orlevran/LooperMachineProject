@@ -1,0 +1,60 @@
+<div class="center">
+    <!--Each dot represent an audio sound. red dot is inactive pad, and green dot is active pad-->
+    <span class="dot" [ngClass]="{'active': (pads[0].status==='on'), 'inactive':(pads[0].status === 'off')}"></span>
+    <span class="dot" [ngClass]="{'active': (pads[1].status==='on'), 'inactive':(pads[1].status === 'off')}"></span>
+    <span class="dot" [ngClass]="{'active': (pads[2].status==='on'), 'inactive':(pads[2].status === 'off')}"></span>
+    <span class="dot" [ngClass]="{'active': (pads[3].status==='on'), 'inactive':(pads[3].status === 'off')}"></span>
+    <span class="dot" [ngClass]="{'active': (pads[4].status==='on'), 'inactive':(pads[4].status === 'off')}"></span>
+    <span class="dot" [ngClass]="{'active': (pads[5].status==='on'), 'inactive':(pads[5].status === 'off')}"></span>
+    <span class="dot" [ngClass]="{'active': (pads[6].status==='on'), 'inactive':(pads[6].status === 'off')}"></span>
+    <span class="dot" [ngClass]="{'active': (pads[7].status==='on'), 'inactive':(pads[7].status === 'off')}"></span>
+    <span class="dot" [ngClass]="{'active': (pads[8].status==='on'), 'inactive':(pads[8].status === 'off')}"></span>
+</div>
+<div class="center">
+    <!--These objects represents the pad's button-->
+    <!--The id is being used to identify the audio tags from the keyboard-->
+    <button style="margin: 15pt;" serialNum = 0 id="Pad_1" class="padActivator">Future<br>Funk<br>Beats</button>
+    <button style="margin: 15pt;" serialNum = 1 id="Pad_2" class="padActivator">Silent star<br>Organ Synth</button>
+    <button style="margin: 15pt;" serialNum = 2 id="Pad_3" class="padActivator">120 Stutter<br>Breakbeats</button>
+    <button style="margin: 15pt;" serialNum = 3 id="Pad_4" class="padActivator">Bass Warwick</button>
+    <button style="margin: 15pt;" serialNum = 4 id="Pad_5" class="padActivator">Electric Guitar</button>
+    <button style="margin: 15pt;" serialNum = 5 id="Pad_6" class="padActivator">Stompy Slos</button>
+    <button style="margin: 15pt;" serialNum = 6 id="Pad_7" class="padActivator">Groove B</button>
+    <button style="margin: 15pt;" serialNum = 7 id="Pad_8" class="padActivator">Maze Politics</button>
+    <button style="margin: 15pt;" serialNum = 8 id="Pad_9" class="padActivator">PAS3</button>
+</div>
+<div class="center">
+    <button style="margin: 10px;" class="playButton">Play</button>
+    <button style="margin: 10px;" class="stopButton">Stop</button>
+</div>
+
+<!--Attention!-->
+<!--The piano keyboard's objects are not the Looper machine pads-->
+<!--The piano keyboard bein used for an example for the audio files
+    and to connect between the project's assets and the pads-->
+<!--Each keyboard object contain a key word to describe it's audio,
+id to connect the audio to the pads and class- white key or black key-->>
+<div class="center">
+    <div class="piano">
+        <div data-note="Funk" id = "Pad_1" class="key white"></div>
+        <div data-note="SilentStar" id = "Pad_2" class="key black"></div>
+        <div data-note="Breakbeats" id = "Pad_3" class="key white"></div>
+        <div data-note="Bass" id = "Pad_4" class="key black"></div>
+        <div data-note="ElectricGuitar" id = "Pad_5" class="key white"></div>
+        <div data-note="StompySlosh" id = "Pad_6" class="key white"></div>
+        <div data-note="GrooveB" id = "Pad_7" class="key black"></div>
+        <div data-note="MazePolitics" id = "Pad_8" class="key white"></div>
+        <div data-note="PAS3" id = "Pad_9" class="key black"></div>
+<!--The id connect between the audio file and the keyboard objects-->
+        <audio id="Funk" src="/assets/notes/Funk.mp3"></audio>
+        <audio id="SilentStar" src="/assets/notes/SilentStar.mp3"></audio>
+        <audio id="Breakbeats" src="/assets/notes/Breakbeats.mp3"></audio>
+        <audio id="Bass" src="/assets/notes/Bass.mp3"></audio>
+        <audio id="ElectricGuitar" src="/assets/notes/ElectricGuitar.mp3"></audio>
+        <audio id="StompySlosh" src="/assets/notes/StompySlosh.mp3"></audio>
+        <audio id="GrooveB" src="/assets/notes/GrooveB.mp3"></audio>
+        <audio id="MazePolitics" src="/assets/notes/MazePolitics.mp3"></audio>
+        <audio id="PAS3" src="/assets/notes/PAS3.mp3"></audio>
+
+    </div>
+</div>
